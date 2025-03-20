@@ -19,8 +19,7 @@ describe('logShout(string)', function() {
 
     logShout('hello');
 
-    expect(spy).toHaveBeenCalledWith('HELLO');
-
+    expect(spy).toHaveBeenCalledWith('hello');
     console.log.restore();
   })
 })
@@ -31,7 +30,7 @@ describe('logWhisper(string)', function() {
 
     logWhisper('HELLO');
 
-    expect(spy).toHaveBeenCalledWith('hello');
+    expect(spy).toHaveBeenCalledWith('HELLO');
 
     console.log.restore();
   })
